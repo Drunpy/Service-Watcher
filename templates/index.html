@@ -8,11 +8,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <title>Six Services</title>
 </head>
-<body class="bg-secondary pt-5 text-monospace">
+<body class="bg-secondary pt-5 text-monospace text-secondary">
     <div class="container">
-        <div class="card card-body shadow">
+        <div class="card card-body shadow mb-3">
+            <h2 class="mb-3"><i class="fas fa-server"></i> Lista de Serviços Six</h2>
             <div class="list-group">
                 {% for service in services_list %}
                     <a href="#" class="list-group-item list-group-item-action">
@@ -22,7 +24,10 @@
                     </a>
                 {% endfor %}
             </div>
-        </div>        
+        </div> 
+        <div class="card card-body shadow text-center">
+            <a href="http://sixcreative.com.br/" target="_blank" class="text-secondary"><img class="img-fluid align-middle mr-1 text-success" style="height:20px;" src="../static/sixb.png"> - V1.0</a>
+        </div>       
     </div>    
 </body>
 </html>
