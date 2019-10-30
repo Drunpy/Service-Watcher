@@ -26,7 +26,8 @@ fn services_status(_req: HttpRequest) -> HttpResponse{
         "https://gestao.appgofit.com.br/",
         "https://institutobehappier.com.br/",
         "https://adm.movimentomusical.com.br/",
-        "https://guiadaorganizacao.com.br/"
+        "https://guiadaorganizacao.com.br/",
+        "https://monicaponde.com.br/"
     ];
     
     let mut final_data = Vec::new();
